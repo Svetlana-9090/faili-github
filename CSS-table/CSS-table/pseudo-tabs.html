@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS seudo Selectors</title>
+    <style>
+     .tabs{ list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border:1px solid #bbb;
+      
+     } 
+     .tabs-item{ border:1px solid #ccc;
+                 display: inline-block;
+                 padding: 10px;
+                 margin: 5px;
+                 
+                 width: 70px;
+                 height: 80px;
+                 text-align: center;
+                 border-radius: 5px;
+        
+                transition: 0.25s;
+       }
+      .tabs-item:hover{ background-color: #bbb;
+                       
+      }
+      .tabs-link{ text-decoration: none;
+                  color:#222
+                  
+      }
+      .tabs-options{ font-size: 32px;
+                     line-height: 6px;
+                     
+                     background-color: #999;
+                     height: 32px;
+                     width: 32px;
+                     border-radius: 32px;
+                     
+                     transform: translateX(45px) translateY(-75px);
+                     opacity: 0;
+                       
+      }
+      .tabs-options:hover{ opacity: 1.0;
+                           transition: 0.5s;
+      }
+
+    </style>
+
+</head>
+<body>
+   <ul class="tabs">
+       <li class="tabs-item">
+           <a class="tabs-link" href="">
+               <img src="https://icons.iconarchive.com/icons/social-media-icons/glossy-social/48/Github-icon.png" />
+               <br/>
+               username
+            </a>
+          <div class="tabs-options">
+              .
+              <br/>
+              .
+              <br/>
+              .
+          </div>
+        </li>
+       <li class="tabs-item">
+           <a class="tabs-link" href="">
+               <img src="https://icons.iconarchive.com/icons/emey87/social-button/48/facebook-icon.png"/>
+              <br/> 
+              FaceBook
+              </a>
+               <div class="tabs-options">
+                .
+                <br/>
+                .
+                <br/>
+                .
+
+              </div>
+       </li>
+       <li class="tabs-item">
+           <a class="tabs-link" href="">
+               <img src="https://icons.iconarchive.com/icons/martz90/circle/48/youtube-icon.png"/>
+              <br/> 
+               YouTube
+            </a>
+           <div class="tabs-options">
+               .
+               <br/>
+               .
+               <br/>
+               .
+           </div>
+        </li>
+   </ul>
+
+
+
+</body>
+</html>
