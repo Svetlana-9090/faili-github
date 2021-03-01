@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Selectors | Directori Tree</title>
+    <style>
+    body{ background-color: #333;
+          
+    }
+    .tree{ list-style-type:"┝";
+           font-size: 64px;
+     
+    
+    }
+
+   .folder{ color: white;
+           /* border: 1px solid red;
+            height: 64px;*/
+            padding: 24px 0 24px 72px;
+            
+            background-image: url(images/Actions-document-open-icon.png) ;
+            background-repeat: no-repeat;
+            line-height: 8px;
+  
+   }
+   .folder:hover{ color: rgb(146, 116, 116);
+                  transition: 0.5s;
+                  opacity: 1.0;
+                  
+   }
+  .folder:last-child{ list-style: "┖";
+  
+   }                   
+  .empty{  background-image: url(images/Actions-document-open-folder-icon.png) ;
+
+  }
+ 
+ .name{ font-size: 18px;
+        
+ }
+ .file{ color: white;
+           /* border: 1px solid red;
+            height: 64px;*/
+            padding: 24px 0 24px 72px;
+            margin-top: 10px;
+           
+            background-image: url(images/Actions-document-properties-icon.png);
+            background-repeat: no-repeat;
+            line-height: 8px;
+  
+   }
+   .file:hover{  color:rgb(194, 102, 102);
+               
+                opacity: 1.0;
+                transition: 0.5s;
+
+                transform: translateX(45px);                  
+   
+   }
+   .file:last-child{list-style: "┖";
+   }
+   .name:hover{ 
+                     
+                     
+                     color: rgb(146, 116, 116);
+                     
+                     
+                     border-radius: 32px;
+                     
+                     transform: translateX(45px);
+                     
+                       
+
+   }
+ </style>
+</head>
+<body>
+   <ul class="tree">
+     <li class="folder">
+         <div class="name">Progect [Done]</div>
+          <ul class="tree">
+              <li class="file"><div class="name">F1</div></li>
+              <li class="file"><div class="name">F2</div></li>
+          </ul>
+        
+     </li>
+    
+     <li class="folder">
+         <div class="name">Progect[Now]</div> 
+        </li>
+     <li class="folder empty">
+         <div class="name">Progect[TBD]</div>
+        </li>
+  </ul>
+    
+
+</body>
+</html>
